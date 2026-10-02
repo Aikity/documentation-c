@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les types de bases</title>
+</head>
+
+<body>
+    <main>
+        <p>Les types de bases en langage C se répartie en 3 grandes catégories:</p>
+        <ul>
+            <li><a href="">Nombres entiers</a></li>
+            <li><a href="">Nombres flottant ou à virgule</a></li>
+            <li><a href="">Caractère (variable)</a></li>
+        </ul>
+
+        <h3>Les types entiers</h3>
+        <p>Le langage C prévoit que sur une machine on puisse trouver 3 tailles d'entier: <strong>short, int et
+                long.</strong> <br>
+            Par défaut, le type entier est <i>signé</i> c'est-à-dire qu'il peut prendre la valeur négative, nulle et
+            positive(&minus;, &Oslash;, &plus;). <br>
+            Chacun des trois types entiers peut être nuancer par l'utilisation <strong>qualificative unsigned</strong>
+            ou <strong>type non signé</strong>. Dans ce cas, on ne représente plus que le nombre positif
+            <strong>&plus;</strong>
+        </p>
+        <h3>Les nombres flottants</h3>
+        <p>Les nombres flottant permettent de représenter d'une manière approche le nombre réel. Le langage C prévoit
+            trois types flottants: <strong>float, double, et longdouble</strong>.</p>
+        <ul>
+            <li>La notation décimale: elle doit obligatoirement comporter un point <q><strong>.</strong> </q></li>
+            <li>La notation exponnentielle: elle utilise la lettre &par;E &rpar; majuscule pour introduire un exposant
+                entier puissance de <strong> 10
+                </strong> avec ou sans signe (&minus;, &plus;).</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Algo</th>
+                    <th>C</th>  
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Décimale</td>
+                    <td>12,34</td>
+                    <td>12.34</td>
+                </tr>
+
+                <tr>
+                    <td>Exponnentielle</td>
+                    <td>12.10 <sup>3</sup></td>
+                    <td>12E3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Les types caractère</h3>
+        <p>Les constantes sont de types caractère lorsqu'elle correspond à des caractères imprimables c'est-à-dire, à
+            des caractères que l'on peut <strong>Afficher</strong>.</p>
+        <p>Certain caractère non-imprimable possède une représentation conventionnelle utilisant le caractère
+            <strong>backslah ou antislah</strong> suivit d'une lettre <strong>&bsol;&lt; lettre &gt;</strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Notation en C</th>
+                    <th>Signification</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>\a</td>
+                    <td>cloche ou bip</td>
+                </tr>
+                <tr>
+                    <td>\b</td>
+                    <td>backspace</td>
+                </tr>
+                <tr>
+                    <td>\f</td>
+                    <td>saut de page</td>
+                </tr>
+                <tr>
+                    <td>\n</td>
+                    <td>saut de ligne</td>
+                </tr>
+                <tr>
+                    <td>\v</td>
+                    <td>tabulation verticale</td>
+                </tr>
+                <tr>
+                    <td>\t</td>
+                    <td>tabulation horizontale</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les entrées et les sorties</title>
+</head>
+
+<body>
+
+    <h3>Les entrées</h3>
+    <h4>Syntaxe</h4>
+    <pre>scanf("%[lettre]", &[nom_variable]);</pre>
+    <pre>
+        ex: unsigned int age;
+            print("Entrer vôtre nom: ");
+            scanf("%u", &age);
+            print("Vous avez %u an%c", age, (a >= 2) ? 's' : ' ');
+     </pre>
+
+    <h3>Les sorties</h3>
+    <p>Pour afficher un caractère ou une chaîne de caractère à l'écran il faut utiliser des fonctions de la bibliothèque
+        stio.h il éxiste 3 fonctions d'affichage de données en langage C</p>
+    <h4>La fonction printf</h4>
+    <p>La fonction printf permet non seulement d'afficher des caractere, des chaines de caractère pour le formatage du
+        texte mais egalement la valeur d'une variable passe en parametre</p>
+    <p>Ce faire, il suffit d'utiliser un indicateur de conversion % suivit d'une &lt; lettre &gt; qui varie en fonction
+        du type de la valeur</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Type de variable</th>
+                <th>Indicateur de conversion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Char</td>
+                <td>%c</td>
+            </tr>
+            <tr>
+                <td>short</td>
+                <td>%hd</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>%d</td>
+            </tr>
+            <tr>
+                <td>long</td>
+                <td>%ld</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>%f</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>%f ou %lf</td>
+            </tr>
+            <tr>
+                <td>longdouble</td>
+                <td>%lf</td>
+            </tr>
+            <tr>
+                <td>unsigned short</td>
+                <td>%hu</td>
+            </tr>
+            <tr>
+                <td>unsigned int</td>
+                <td>%u</td>
+            </tr>
+            <tr>
+                <td>unsigned long</td>
+                <td>%lu</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <pre>
+            ex: int nb1 = 10, nb2 = 200;
+                float x = 12,35
+                char lettre = 'x';
+                printf("Nombre = %d, nombre = %d, flottant = %f et lettre = %c\n", nb1, nb2, x, lettre);
+        </pre>
+    <h4>Remarques:</h4>
+    <p>On peut afficher toutes sortes d'operation elemetaire a l'interieur de printf</p>
+    <pre>
+            ex: printf("X=%f\n", (float) -b/a);
+         </pre>
+
+    <p>
+        Lorsqu'on affiche un flottant; il y a un certain nombre de zero qui suive et ce peu importe qu'ils sont utile ou
+        non. Afin de supprimer certain zero inutil en procede comme suit:
+    </p>
+    <p>
+        On met un point apres l'indicateur de conversion % suivit par un nombre qui indique le nombre de chiffre qu'if aura apres la virgule et enfin la lettre qui indique le type de la variable.
+    </p>
+    <pre>
+        Ex: printf("x = %f\n", (float) -b/a);
+            &rAarr; //x = -2,5000
+           printf("x = %.2f\n", (float) -b/a);
+             &rAarr; //x = -2,50
+
+             printf("x = %d\n",x);
+             printf("x = %.2f\n",);
+             &rAarr; //x = -2,50
+    </pre>
+
+    <p>puts: pour ecrire une chaine de caractère. L'utilisation de puts est plus simple puisq'elle se contente d'afficher que des caractères simples</p>
+    <h4>La fonction puts</h4>
+
+    <p>
+        puts se met a la ligne automatiquement
+    </p>
+<pre>
+    puts("Bonjour"); &equiv; printf("Bonjour \n");
+</pre>
+    <h4>La fonction putchar</h4>
+    <p>Permet d'ecrire un seul caractère</p>
+    <pre>
+        Ex: putchar('x');               print("x");
+            char lettre = 'x'; &equiv;  char lettre = 'x';
+            putchar(lettre);             print("%c", lettre);
+    </pre>
+
+</body>
+
+</html>

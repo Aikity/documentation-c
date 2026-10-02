@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opérateurs et types d'expressiohn</title>
+</head>
+
+<body>
+    <main>
+        <h3>Les Opérateurs Arithmétiques</h3>
+        <ul>
+            <li>&plus;</li>
+            <li>&minus;</li>
+            <li>&times;</li>
+            <li>&sol;</li>
+        </ul>
+        <h4>Exemples</h4>
+        <pre>
+            int a = 2, b = 5;
+            float x;
+            x = -b / a; 
+            &rArr; // x = -2.0000
+        </pre>
+        <pre>
+            int a = 2, b = 5;
+            int x;
+            x = -b / a; 
+            &rArr; // x = -2
+        </pre>
+        <pre>
+            int a = 2;
+            float b = 5, x;
+            x = -b / a; 
+            &rArr; // x = -2.5000
+        </pre>
+
+        <h3>Les fonctions Arithmétiques standard</h3>
+        <p>Les fonctions suivantes sont prédéfinies dans la bibliothèque <strong>
+                math.h
+            </strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Commande en C</th>
+                    <th>Explication</th>
+                    <th>Langage algo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>exp(x)</td>
+                    <td>fonction expo</td>
+                    <td>e <sup>x</sup></td>
+                </tr>
+
+                <tr>
+                    <td>log(x)</td>
+                    <td>logarithme nat</td>
+                    <td>ln(x)</td>
+                </tr>
+                <tr>
+                    <td>log10(x)</td>
+                    <td>logarithme à base 10</td>
+                    <td>log <sub>10</sub>(x)</td>
+                </tr>
+                <tr>
+                    <td>pow(x, y)</td>
+                    <td>x exposant y</td>
+                    <td>x<sup>y</sup></td>
+                </tr>
+                <tr>
+                    <td>sqrt(x)</td>
+                    <td>racine carrée de x</td>
+                    <td>&Sqrt;x</td>
+                </tr>
+                <tr>
+                    <td>floor(x)</td>
+                    <td>arrondir en moins</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ceil(x)</td>
+                    <td>arrondir en plus</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>fabs()</td>
+                    <td>valeur absolue</td>
+                    <td>|x|</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Les Opérateurs relationnelle ou opératurs de comparaison</h3>
+        <p>Les langage C prédéfinies 6 opérateurs de comparaison, ces opérateurs servervent à comparer des expréssions.
+            Le résultat de la comparaison est un entier</p>
+        <p><strong>1:</strong> si le résultat est Vrai</p>
+        <p><strong>0:</strong> si le résultat est Faux</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Opérateurs</th>
+                    <th>Exemple</th>
+                    <th>Vrai quand</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>!=</td>
+                    <td>a != b</td>
+                    <td>a est différent de b</td>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>a == b</td>
+                    <td>a est égal à b</td>
+                </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td>a &gt; b</td>
+                    <td>a est strictement supérieur à b</td>
+                </tr>
+                 <tr>
+                    <td> &gt;= </td>
+                    <td>a &gt;= b</td>
+                    <td>a est supérieur ou égal à b</td>
+                </tr>
+
+                 <tr>
+                    <td> &lt;</td>
+                    <td>a &lt; b</td>
+                    <td>a est strictement inférieur à b</td>
+                </tr>
+
+                  <tr>
+                    <td> &lt;=</td>
+                    <td>a &lt;= b</td>
+                    <td>a est strictement inférieur à b</td>
+                </tr>
+            </tbody>
+        </table>
+        <pre>
+        Ex: int main () {
+
+            printf(" 10 == 20 renvoi: %d\n", 10 == 20);
+            printf(" 10 == 20 renvoi: %d\n", 10 == 20);
+            return &oslash;;
+
+        }
+     </pre>
+
+     <h3>Les opérateurs logiques</h3>
+     <p>On utilise les opérateurs logiques pour relier deux expressions (ou condition) ou plus.</p>
+     <table>
+        <thead>
+            <tr>
+                <th>Opérateurs</th>
+                <th>Langage algo</th>
+                <th>Vrai quand</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&&</td>
+                <td>et logique</td>
+                <td>les 2 comparaison (expression) sont Vraies</td>
+            </tr>
+            <tr>
+                <td>||</td>
+                <td>ou logique</td>
+                <td>Au moin une des 2 comparaisons  (expression)e est Vrai </td>
+            </tr>
+            <tr>
+                <td>!</td>
+                <td>Négation</td>
+                <td>L'expression associée est fausse</td>
+            </tr>
+        </tbody>
+     </table>
+
+     <h3>Opérateur d'affectation</h3>
+     <p>En langage C l'opérateur d'affectation est l'opérateur <strong>=.</strong>
+     Il posséde une associativité de droite à gauche.</p>
+     <pre>Ex: int i = j = k = 1;</pre>
+
+     <h3>Opérateur d'incrémentation et de décrèmentation</h3>
+     <p>Les affectations les plus fréquents sont de types <strong>i = i + 1 ou i = i - 1.</strong></p>
+     <p>En langage C nous disposons de 2 opérateurs inhabituels</p>
+
+     <table>
+        <thead>
+            <tr>
+                <th>Algo</th>
+                <th>C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>i = i + 1</td>
+                <td>i++ ou ++i(incrémentation) augmentation d'une unité</td>
+            </tr>
+            <tr>
+                <td>i = i - 1</td>
+                <td>i-- ou --i(decrementation) diminution d'une unité</td>
+            </tr>
+        </tbody>
+     </table>
+     <p>L'opérateur <strong>++ et -- sont employées dans les suivants:</strong></p>
+     <dl>
+        <dt>incrémentation ou Décrémenter</dt>
+        <dd>une variable par exemple dans une boucle, dans ce cas il n'y a pas de différence entre le notation préfixe (++i et --i) et postfixe (i++ et i--)
+        </dd>
+         <dt>incrémentation ou Décrémenter</dt>
+        <dd>une variable est en même temps affectée sa valeur à une autre variable dans ce cas nous devons choisir entre la notation préfixe (++i et --i) et postfixe (i++ et i--)
+        </dd>
+     </dl>
+     <p><strong>x = i++;</strong> // On passe d' aborde la valeur de i à X et on incrémente i après </p>
+     <p>ex: x = i++ où i = 4, &rAarr;  x = 4 et i = 5 </p>
+
+     <p><strong>x = ++i;</strong> // On incrémente d'abord la valeur de i et on passe cette valeur incrémenté à x </p>
+     <p>ex: x = ++i où i = 4, x = 5</p>
+
+       <p><strong>x = i--;</strong> // on passe d'aborde la valeur de i et on décrémente i après. </p>
+     <p>ex: x = i-- où i = 4, &rAarr; x = 4 et i = 3</p>
+
+       <p><strong>x = --i;</strong> // On décrémente d'abord la valeur de i et on passe cette valeur décrémenté à x </p>
+     <p>ex: x = --i où i = 4, &rArr; x = 3 et i = 3</p>
+
+     <h3>Opérateur d'affectation élargie</h3>
+     <p>Le langage C possède des opérateurs composés qui abrègent l'écriture et donne un bel aspect à votre code. On appel ces opérateur composés: <strong>Opérateur d'affectatio élargie</strong> </p>
+     <table>
+        <thead>
+            <tr>
+                <th>Opérateur</th>
+                <th>Fonction</th>
+                <th>Langage algo</th>
+                <th>ex en C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>+=</td>
+                <td>addition</td>
+                <td>x = x + n</td>
+                <td>x += n</td>
+            </tr>
+            <tr>
+                <td>-=</td>
+                <td>soustraction</td>
+                <td>x = x - n</td>
+                <td>x -= n</td>
+            </tr>
+            <tr>
+                <td>/=</td>
+                <td>division</td>
+                <td>x=x/n</td>
+                <td>x/=n</td>
+            </tr>
+            <tr>
+                <td>*=</td>
+                <td>multiplication</td>
+                <td>x=x*n</td>
+                <td>x*=n</td>
+            </tr>
+            <tr>
+                <td>%=</td>
+                <td>modulo</td>
+                <td>x=x%n</td>
+                <td>x%=n</td>
+            </tr>
+        </tbody>
+     </table>
+     <h3>Priorité des opérateur</h3>
+     <p>En langage C l'ordre Priorité des opérateurs est le suivant</p>
+     
+    <table>
+        <tr>
+            <th>Priorité</th>
+        </tr>
+        <tr>
+            <td>1 (la plus forte)</td>
+            <td>()</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>! ++ --</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>* / %</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>+ -</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td> &lt; &lt;= &gt; &gt;=</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>== !=</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>&&</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>||</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>= += /= *= %=</td>
+        </tr>
+    </table>
+    <p>Dans chaque classe de priorité, les opérateurs ont la même priorité. Si nous avons une suite d'opérateur binaire dans la même classe l'évaluation se de la gauche vers la droite dans l'expression.</p>
+    <p>Pour les opérateurs unaires (++ -- !) et pour les opérateurs d'affectation, l'évaluation se fait à gauche dans l'expression.</p>
+
+    <h3>Conversion implicite de type</h3>
+    <p>Dans une manière générale, on peut dire que si un opérateur porte sur 2 opérandes différentes (type &ne;), il y a en quelque sorte conversion du type le plus faible en type le plus fort.</p>
+    <pre>
+        long p, q;
+        int r;
+        p = r + q; // r &rarr; long
+    </pre>
+
+     <h3>Conversion de type explicite</h3>
+    <p>Si on souhaite forcer la conversion d'une expression quelconque dans un type de votre choix, on peut utiliser l'opérateur <q>cast</q></p>
+    <pre>
+        int a, b;
+        float x;
+        x = (float) a/b; // x = 2.5
+    </pre>
+    </main>
+</body> 
+
+</html>
