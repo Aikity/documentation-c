@@ -66,6 +66,9 @@ h1 > sub {
 
 aside {
     position: absolute;
-    background: var(--COLOR-DARK);
-    line-height: 3vh;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 60px;
 }

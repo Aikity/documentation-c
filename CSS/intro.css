@@ -1,0 +1,70 @@
+:root {
+    --COLOR-IMPORTANT: red;
+    --SIZE-PARA: 20px;
+    --COLOR-STANDARD: black;
+}
+
+section {
+    text-align: justify;
+    margin: 30px 0;
+}
+
+section~hr {
+    margin: auto;
+    width: 50%;
+}
+
+pre {
+    font-size: 25px;
+}
+
+.other-structure {
+    margin-top: 30px;
+}
+
+.code-struct {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+p {
+    font-size: var(--SIZE-PARA);
+}
+
+dt {
+    font-size: var(--SIZE-PARA);
+    font-weight: bold;
+}
+
+h2,
+dt {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.identificateurs-list {
+    margin-left: var(--SIZE-PARA);
+    font-weight: bolder;
+}
+
+.biblio-nom {
+    text-align: center;
+    border: 3px solid var(--COLOR-IMPORTANT);
+    padding: 20px 20px;
+    width: fit-content;
+}
+
+
+.vertical {
+    height: 15vh;
+    border: 1px solid var(--COLOR-STANDARD);
+    margin: 10px 0;
+}
+
+
+p i {
+    text-decoration: underline;
+    color: var(--COLOR-STANDARD);
+}
