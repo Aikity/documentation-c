@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/types.css">
     <title>Les types de bases</title>
 </head>
 
 <body>
     <header id="header">
-        <h1>C<sub>langage</sub></h1>
+        <div  class="logo-titre">
+            <img src="assets/c_logos.png" alt="logos_c" widh="30px" height="30px">
+            <h1>langage</h1>
+        </div>
+
+
         <nav class="nav-header">
             <ul class="list-header">
                 <li><a href="#">Accueil</a></li>
@@ -20,22 +26,32 @@
             </ul>
         </nav>
     </header>
-    <hr>
 
-    <aside>
+    <!-- ================= SOMMAIRE (gauche) ================= -->
+    <aside class="aside-left">
         <a href="types.html">types</a>
         <a href="operateurs.html">operateurs</a>
         <a href="flux.html">flux</a>
     </aside>
+
+    <!-- =================      SOMMAIRE (droite) ================= -->
+    <aside id="aside-right">
+        <a href="#types-entiers">Types entiers</a>
+        <a href="#types-flottants">Types flottants</a>
+        <a href="#types-caractere">Types caractères</a>
+    </aside>
     <main id="main-content">
-        <p>Les types de bases en langage C se répartie en 3 grandes catégories:</p>
+        <div class="differents-types">
+            <p>Les types de bases en langage C se répartie en 3 grandes catégories:</p>
         <ul>
             <li><a href="">Nombres entiers</a></li>
             <li><a href="">Nombres flottant ou à virgule</a></li>
             <li><a href="">Caractère (variable)</a></li>
         </ul>
 
-        <h3>Les types entiers</h3>
+        </div>
+        <div id="types-entiers">
+            <h3>Les types entiers</h3>
         <p>Le langage C prévoit que sur une machine on puisse trouver 3 tailles d'entier: <strong>short, int et
                 long.</strong> <br>
             Par défaut, le type entier est <i>signé</i> c'est-à-dire qu'il peut prendre la valeur négative, nulle et
@@ -44,7 +60,10 @@
             ou <strong>type non signé</strong>. Dans ce cas, on ne représente plus que le nombre positif
             <strong>&plus;</strong>
         </p>
-        <h3>Les nombres flottants</h3>
+        
+        </div> 
+        <div id="types-flottants">
+            <h3>Les nombres flottants</h3>
         <p>Les nombres flottant permettent de représenter d'une manière approche le nombre réel. Le langage C prévoit
             trois types flottants: <strong>float, double, et longdouble</strong>.</p>
         <ul>
@@ -76,8 +95,10 @@
                 </tr>
             </tbody>
         </table>
-
-        <h3>Les types caractère</h3>
+    
+        </div>       
+        <div id="types-caractere">
+            <h3>Les types caractère</h3>
         <p>Les constantes sont de types caractère lorsqu'elle correspond à des caractères imprimables c'est-à-dire, à
             des caractères que l'on peut <strong>Afficher</strong>.</p>
         <p>Certain caractère non-imprimable possède une représentation conventionnelle utilisant le caractère
@@ -118,7 +139,9 @@
                 </tr>
 
             </tbody>
-        </table>
+        </table>    
+        </div>        
+        
     </main>
     <footer>
         <p>Copyright &copy; by <strong> Aikity</strong> </p>
