@@ -1,0 +1,51 @@
+:root{
+    --size-paragraph : 20px;
+    --color-border: lightgray;
+    --color-table: black;
+    --padding-table: 10px;
+}
+
+#main-content{
+    border: 1px solid var(--color-border);
+}
+
+#main-content > div{
+    margin: 10px 0;
+}
+
+pre {
+  font-size: 1rem; /* Equivalent to 14px when root is 16px */
+  line-height: 1.5;    /* Adds breathing room between code lines */
+  overflow-x: auto;    /* Adds a scrollbar instead of breaking mobile layouts */
+  padding: 1rem;
+  white-space: wrap;
+}
+p{
+    font-size: 20px;
+}
+.table{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 60px 0;
+
+}
+
+table, th, td {
+  border: 1px solid var(--color-table);
+  padding: var(--padding-table);
+}
+
+h2, h4{
+    text-decoration: underline;
+    text-indent: 4rem;
+}
+
+h4{
+    margin-top: 30px;
+}
