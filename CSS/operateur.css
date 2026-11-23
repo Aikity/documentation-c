@@ -1,0 +1,63 @@
+:root {
+    --mg: 30px;
+    --pd: 10px;
+    --fz: 10px;
+    --ti: 3em;
+    --fspara: 20px;
+    --bdc: gray;
+}
+
+
+[class*="operateur"] {
+    margin: 30px 0;
+}
+
+[id*="titre"]{
+    text-align: center;
+}
+
+[class*="operateur"] > [class^="table"]{
+   width: 100%;
+    text-align: center;
+   display: flex;
+   justify-content: center;
+   margin: var(--mg);
+   
+}
+pre {
+  font-size: 1rem; /* Equivalent to 14px when root is 16px */
+  line-height: 1.5;    /* Adds breathing room between code lines */
+  overflow-x: auto;    /* Adds a scrollbar instead of breaking mobile layouts */
+  padding: 1rem;
+}
+[class*="paragraphe"]{
+    font-size: var(--fspara);
+    margin: var(--mg);
+}
+
+.exemples > h4 {
+    text-indent: var(--ti);
+}
+#main-content{
+    border: 1px solid lightgray;
+}
+
+.table {
+    
+}
+
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: var(--pd);
+}
+
+h2{
+    text-decoration: underline;
+}
