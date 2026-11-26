@@ -38,13 +38,8 @@ pre {
 .exemples > h4 {
     text-indent: var(--ti);
 }
-#main-content{
-    border: 1px solid lightgray;
-}
 
-.table {
-    
-}
+
 
 table {
     border: 1px solid;

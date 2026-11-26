@@ -5,9 +5,6 @@
     --padding-table: 10px;
 }
 
-#main-content{
-    border: 1px solid var(--color-border);
-}
 
 #main-content > div{
     margin: 10px 0;

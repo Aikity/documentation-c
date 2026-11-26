@@ -19,69 +19,81 @@
 
 
         <nav class="nav-header">
-            <ul class="list-header">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#">Concepts</a></li>
-                <li><a href="#">Exercices</a></li>
-                <li><a href="#">Exemples</a></li>
-            </ul>
+            <div class="list-header">
+                <div>
+                    <img src="assets/image.png" alt="Accueil">
+                    <a href="index.html">Accueil</a>
+                </div>
+                <div>
+                    <img src="assets/concept.png" alt="Concepts">
+                    <a href="#">Concepts</a>
+                </div>
+                <div>
+                    <img src="assets/approval.png" alt="Exercices">
+                    <a href="#">Exercices</a>
+                </div>
+                <div>
+                    <img src="assets/book.png" alt="Exemples">
+                    <a href="#">Exemples</a>
+                </div>
+            </div>
         </nav>
     </header>
 
 
     <div class="contents">
 
-  
-    <!-- ================= SOMMAIRE (gauche) ================= -->
-    <aside id="aside-left">
-        <a href="types.html">types</a>
-        <a href="operateurs.html">operateurs</a>
-        <a href="flux.html">flux</a>
-    </aside>
 
-    <!-- =================      SOMMAIRE (droite) ================= -->
-    <aside id="aside-right">
-        <a href="#intro">Introduction</a>
-        <a href="#structure">Structure</a>
-        <a href="#ecriture">Ecritures</a>
-    </aside>
+        <!-- ================= SOMMAIRE (gauche) ================= -->
+        <aside id="aside-left">
+            <a href="types.html">types</a>
+            <a href="operateurs.html">operateurs</a>
+            <a href="flux.html">flux</a>
+        </aside>
 
-    <!-- ================= CONTENU PRINCIPAL ================= -->
-    <main id="main-content">
+        <!-- =================      SOMMAIRE (droite) ================= -->
+        <aside id="aside-right">
+            <a href="#intro">Introduction</a>
+            <a href="#structure">Structure</a>
+            <a href="#ecriture">Ecritures</a>
+        </aside>
 
-        <!-- ---------- Introduction ---------- -->
-        <section id="intro">
-            <h2>Introduction</h2>
+        <!-- ================= CONTENU PRINCIPAL ================= -->
+        <main id="main-content">
 
-            <p>Le langage C est <span>un langage compilé</span>, c'est-à-dire :</p>
+            <!-- ---------- Introduction ---------- -->
+            <section id="intro">
+                <h2>Introduction</h2>
 
-            <div class="definition">
-                <p>- Qu'il faut entrer un texte dans l'ordinateur <mark>à l'aide d'un éditeur</mark>
-                    (Vs Code, Notepad++, Bloc note, etc.)</p>
-                <p>- Qu'il faut <mark>le traduire en langage machine, c'est-à-dire en code binaire,
-                        à l'aide d'un compilateur (mingW)</mark> </p>
-                <p>- Qu'il faut <mark>l'exécuter</mark> </p>
-            </div>
-        </section>
-        <hr>
-        <!-- ---------- Structure ---------- -->
-        <section id="structure">
-            <h2>Structure d'un programme en langage C</h2>
+                <p>Le langage C est <span>un langage compilé</span>, c'est-à-dire :</p>
 
-            <div class="struct-explication">
-                <p> <mark>Directive de préprocesseur</mark>(ou bibliothèque) commençant par # et se terminant
-                    par un retour à la ligne (pas de point-virgule).</p>
-                <p>Les déclarations globales qui <mark> se terminent par un point-virgule.</mark></p>
-                <p>Les suites de fonctions <mark>écrites les unes après les autres.</mark></p>
-                <p>Certaines bibliothèques sont incluses dans les ordinateurs, ce qui permet
-                    au programme de s'exécuter.</p>
-                <p>Pour ajouter une bibliothèque, on utilise la syntaxe suivante :
-                </p>
+                <div class="definition">
+                    <p>- Qu'il faut entrer un texte dans l'ordinateur <mark>à l'aide d'un éditeur</mark>
+                        (Vs Code, Notepad++, Bloc note, etc.)</p>
+                    <p>- Qu'il faut <mark>le traduire en langage machine, c'est-à-dire en code binaire,
+                            à l'aide d'un compilateur (mingW)</mark> </p>
+                    <p>- Qu'il faut <mark>l'exécuter</mark> </p>
+                </div>
+            </section>
 
-                <p class="biblio-nom"><strong> #include &lt;nom_bibliothèque&gt;</strong></p>
-                <p>Voici un exemple en langage C qui affiche <q>Bonjour</q> à l'écran.</p>
-            </div>
-            <pre>
+            <!-- ---------- Structure ---------- -->
+            <section id="structure">
+                <h2>Structure d'un programme en langage C</h2>
+
+                <div class="struct-explication">
+                    <p> <mark>Directive de préprocesseur</mark>(ou bibliothèque) commençant par # et se terminant
+                        par un retour à la ligne (pas de point-virgule).</p>
+                    <p>Les déclarations globales qui <mark> se terminent par un point-virgule.</mark></p>
+                    <p>Les suites de fonctions <mark>écrites les unes après les autres.</mark></p>
+                    <p>Certaines bibliothèques sont incluses dans les ordinateurs, ce qui permet
+                        au programme de s'exécuter.</p>
+                    <p>Pour ajouter une bibliothèque, on utilise la syntaxe suivante :
+                    </p>
+
+                    <p class="biblio-nom"><strong> #include &lt;nom_bibliothèque&gt;</strong></p>
+                    <p>Voici un exemple en langage C qui affiche <q>Bonjour</q> à l'écran.</p>
+                </div>
+                <pre>
                 <code style="text-align: center;">
                                 
 #include &lt;conio.h&gt;
@@ -93,96 +105,112 @@ int main() {
                 </code>
   
 }</pre>
-            <hr>
-            <div class="other-structure">
 
-                <p>La valeur de retour n'est pas obligatoire si on utilise le mot-clé <strong><q>void</q></strong>
-                    à la place de <q>int</q>. Dans ce cas, on utilise <strong>return; </strong>
-                    à la place de <strong>return 0;</strong></p>
+                <div class="other-structure">
 
-                <div class="code-struct">
+                    <p>La valeur de retour n'est pas obligatoire si on utilise le mot-clé <strong><q>void</q></strong>
+                        à la place de <q>int</q>. Dans ce cas, on utilise <strong>return; </strong>
+                        à la place de <strong>return 0;</strong></p>
 
-                    <pre>int main() {
+                    <div class="code-struct">
+
+                        <pre>int main() {
     ...
     return 0;
 }</pre>
 
-                    <div class="vertical"></div>
-                    <pre>void main() {
+                        <div class="vertical"></div>
+                        <pre>void main() {
     ...
     return;
 }</pre>
 
-                    <div class="vertical"></div>
+                        <div class="vertical"></div>
 
-                    <pre>main() {
+                        <pre>main() {
     ...
 }</pre>
 
+                    </div>
+
+
+
+                    <p>#include &lt;stdio.h&gt; : inclut l'entête standard contenant la déclaration
+                        des entrées et des sorties.</p>
+                    <p>La fonction <strong>puts</strong> est un extrait de cette bibliothèque.</p>
+                    <p><strong>int</strong> est le type renvoyé par la fonction <strong>main()</strong>.</p>
+                    <p><strong>main()</strong> : est la fonction principale du langage C.</p>
+                    <p><strong>getch()</strong> : est une fonction qui permet l'attente de la frappe
+                        d'une touche. C'est un extrait de la bibliothèque <strong>&lt;conio.h&gt;</strong></p>
+
                 </div>
 
+            </section>
+            <!-- ---------- Règles d'écriture ---------- -->
+            <section id="ecriture">
+                <h2>Quelques règles d'écriture</h2>
+
+                <dl>
+                    <dt>Les identificateurs</dt>
+                    <dd>
+                        <p>Les identificateurs servent à désigner les différents objets manipulés
+                            par le programme :</p>
+                        <ol class="identificateurs-list">
+                            <li>Les variables</li>
+                            <li>Les types</li>
+                            <li>Les fonctions</li>
+                        </ol>
+                        <p>Ils sont formés par des <i>caractères</i> ou <i>suites de caractères</i>
+                            parmi <i>les lettres et les chiffres.</i></p>
+                        <p>Le premier d'entre eux est une lettre ; les majuscules et les minuscules
+                            sont autorisées mais ne sont pas équivalentes. On dit alors que le langage C
+                            est sensible à la casse (a &ne; A).</p>
+                        <p>REMARQUE : tous les types et toutes les fonctions standard du langage C
+                            doivent être écrits en <strong>MINUSCULE</strong>.</p>
+                    </dd>
+
+                    <dt>Les séparateurs</dt>
+                    <dd>Deux identificateurs consécutifs doivent être séparés par une
+                        <i>fin de ligne</i> ou <i>un espace</i>.
+                    </dd>
+
+                    <dt>Les commentaires</dt>
+                    <dd>
+                        <p><strong>&sol;&sol;</strong> : sur une ligne.</p>
+                        <p><strong>&sol;* ... *&sol;</strong> : sur plusieurs lignes.</p>
+                    </dd>
+                </dl>
+            </section>
+
+        </main>
 
 
-                <p>#include &lt;stdio.h&gt; : inclut l'entête standard contenant la déclaration
-                    des entrées et des sorties.</p>
-                <p>La fonction <strong>puts</strong> est un extrait de cette bibliothèque.</p>
-                <p><strong>int</strong> est le type renvoyé par la fonction <strong>main()</strong>.</p>
-                <p><strong>main()</strong> : est la fonction principale du langage C.</p>
-                <p><strong>getch()</strong> : est une fonction qui permet l'attente de la frappe
-                    d'une touche. C'est un extrait de la bibliothèque <strong>&lt;conio.h&gt;</strong></p>
 
+
+        <!-- ================= PIED DE PAGE ================= -->
+        <footer>
+            <div class="author">
+
+                <p>Copyright &copy; by <strong>Aikity</strong></p>
+            </div>
+            <div class="network">
+                <div>
+                    <img src="assets/github.png" alt="GitHub">
+                    <a href="#">GitHub</a>
+                </div>
+                <div>
+                    <img src="assets/facebook.png" alt="Facebook">
+                    <a href="#">Facebook</a>
+
+                </div>
+
+                <div>
+                    <img src="assets/email.png" alt="Gmail">
+                    <a href="#">Gmail</a>
+                </div>
             </div>
 
-        </section>
-        <hr>
-        <!-- ---------- Règles d'écriture ---------- -->
-        <section id="ecriture">
-            <h2>Quelques règles d'écriture</h2>
-
-            <dl>
-                <dt>Les identificateurs</dt>
-                <dd>
-                    <p>Les identificateurs servent à désigner les différents objets manipulés
-                        par le programme :</p>
-                    <ol class="identificateurs-list">
-                        <li>Les variables</li>
-                        <li>Les types</li>
-                        <li>Les fonctions</li>
-                    </ol>
-                    <p>Ils sont formés par des <i>caractères</i> ou <i>suites de caractères</i>
-                        parmi <i>les lettres et les chiffres.</i></p>
-                    <p>Le premier d'entre eux est une lettre ; les majuscules et les minuscules
-                        sont autorisées mais ne sont pas équivalentes. On dit alors que le langage C
-                        est sensible à la casse (a &ne; A).</p>
-                    <p>REMARQUE : tous les types et toutes les fonctions standard du langage C
-                        doivent être écrits en <strong>MINUSCULE</strong>.</p>
-                </dd>
-
-                <dt>Les séparateurs</dt>
-                <dd>Deux identificateurs consécutifs doivent être séparés par une
-                    <i>fin de ligne</i> ou <i>un espace</i>.
-                </dd>
-
-                <dt>Les commentaires</dt>
-                <dd>
-                    <p><strong>&sol;&sol;</strong> : sur une ligne.</p>
-                    <p><strong>&sol;* ... *&sol;</strong> : sur plusieurs lignes.</p>
-                </dd>
-            </dl>
-        </section>
-
-    </main>
-
-
-
-
-    <!-- ================= PIED DE PAGE ================= -->
-    <footer>
-        <p>Copyright &copy; by <strong>Aikity</strong></p>
-        <a href="#">GitHub</a>
-        <a href="#">Facebook</a>
-        <a href="#">Gmail</a>
-    </footer>
+        </footer>
 
 </body>
 
